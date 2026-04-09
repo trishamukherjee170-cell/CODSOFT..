@@ -20,6 +20,7 @@ features = df[['Action', 'Romance', 'SciFi']]
 # Calculate similarity matrix
 similarity = cosine_similarity(features)
 
+
 # Recommendation function
 def recommend(movie_name):
     if movie_name not in df['Movie'].values:
